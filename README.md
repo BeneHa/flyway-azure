@@ -43,9 +43,9 @@ stages:
   - job: FlywayDocker
     timeoutInMinutes: 10
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-20.04'
     container:
-      image: kulmam92/flyway-azure:6.2.3
+      image: beneha/flyway-azure:7.14.1
     steps:
     - script: whoami
     - script: pwd

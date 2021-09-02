@@ -1,13 +1,13 @@
-FROM node:10-alpine
+FROM node:16-alpine
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
 # openjdk
-ENV JAVA_VERSION 8u242
-ENV JAVA_ALPINE_VERSION 8.242.08-r0
+ENV JAVA_VERSION 8u275
+ENV JAVA_ALPINE_VERSION 8.275.01-r0
 # flyway
-ENV FLYWAY_VERSION 6.2.3
-ENV SNOWFLAKE_DRIVER_VERSION 3.12.0
+ENV FLYWAY_VERSION 7.14.1
+ENV SNOWFLAKE_DRIVER_VERSION 3.9.2
 
 # Requirement for the non glibc-based containers
 # https://docs.microsoft.com/en-us/azure/devops/pipelines/process/container-phases?view=azure-devops#non-glibc-based-containers
